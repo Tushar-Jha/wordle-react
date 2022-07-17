@@ -15,7 +15,7 @@ export const generateWordSet = async () => {
     await fetch(wordBank)
         .then((response) => response.text())
         .then((res)=>{
-            const wordArray=res.split("\r\n");
+            const wordArray=res.split("\n");
             corrWord=wordArray[Math.floor(Math.random()*wordArray.length)].toUpperCase();
             wordSet= new Set(wordArray);
             console.log(wordSet);
