@@ -53,6 +53,7 @@ function App() {
     }
     else {
       notifyNotFound();
+      return;
     }
  
     if (currWord === correctWord) {
