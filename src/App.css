@@ -81,16 +81,22 @@
   .App{
     align-items: center;
   }
+  .keyrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   .key{
-    min-width: 25px;
+    min-width: 22px;
     margin-right: 5px;
     height: 50px;
     border-radius: 4px;
     font-size: 14px;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
   }
   .keyrow:not(:last-child){
-    margin-left: 10px;
+    /* margin-left: 5px; */
   }
 }
